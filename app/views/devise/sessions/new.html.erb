@@ -1,0 +1,35 @@
+<style>
+  body{
+      background-image: url("https://images.wallpaperscraft.ru/image/single/nebo_svet_abstrakciya_85064_1920x1080.jpg");
+  }
+
+</style>
+<div class="new_login">
+  <h2 class="display-1">Авторизация</h2>
+  <hr>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email,class:"form-label fs-1" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"input_text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password,class:"form-label fs-1"%><br />
+    <%= f.password_field :password, autocomplete: "current-password",class:"input_text form-control" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me,class:'form-check-input mt-3' %>
+      <%= f.label :remember_me ,class:"form-check-label fs-2"%>
+    </div>
+  <% end %>
+
+  <div class="actions">
+      <%= f.submit "Log in",class:"btn btn-primary mb-3 " %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>

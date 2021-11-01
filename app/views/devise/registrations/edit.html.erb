@@ -1,0 +1,44 @@
+<style>
+  body{
+      background-image: url("https://images.wallpaperscraft.ru/image/single/nebo_svet_abstrakciya_85064_1920x1080.jpg");
+      background-size: 100%;
+  }
+</style>
+<div class="edit_profile">
+<p class="autorize">Редактирование</p>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :Почта,class:"fs-1" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"form-control input_text" %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Пароль,class:"fs-1" %><br />
+    <%= f.password_field :password, autocomplete: "new-password",placeholder:"оставьте поле пустым, если вы не хотите его менять",class:"form-control input_text" %>
+    <% if @minimum_password_length %>
+      <em><%= @minimum_password_length %> знаков минимум</em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Подтверждение_пароля,class:"fs-1" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"form-control input_text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Текущий_пароль,class:"fs-1" %><br>
+    <%= f.password_field :current_password, autocomplete: "current-password",placeholder:"нам нужен ваш текущий пароль для подтверждения",class:"form-control input_text" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Изменить",class:"btn btn-primary mb-3 fs-3 w-50" %>
+  </div>
+<% end %>
+</div>
+<!--<%= resource_name.to_s.humanize %>-->
