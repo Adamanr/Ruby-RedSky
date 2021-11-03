@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Untitled2</title>
+    <title><%= yield(:title) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="icon" href="https://sun9-7.userapi.com/impg/Up1lnFavoK3NK-qQa0f4NCLgvWDo_KBP2Lmbhg/2o7ym7gdkuc.jpg?size=2000x1761&quality=96&sign=b9f254831211a3671d6c091e0523e2e0&type=album">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <% if  current_page?("/users/sign_in") %>
+  <% if  current_page?("/users/sign_in") || current_page?("/users/sign_up")%>
 
   <% else %>
     <%= render 'templates/header' %>

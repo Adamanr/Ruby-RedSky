@@ -10,26 +10,26 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse fs-3 pt-2" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse fs-3 " id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Посты</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-link fs-3  btn btn-submit">
             <%= link_to "Статьи","/articles",class:"nav-link" %>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+          <li class="nav-link fs-3  btn btn-submit">
+            <%= link_to "Цена","/price",class:"nav-link " %>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Профиль
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <%= link_to "Личный кабинет","/profile",class:"dropdown-item" %>
-              <%= link_to 'Редактировать',"#" , :class => 'dropdown-item' %>
-              <%= button_to 'Выйти', destroy_user_session_path, method: :delete,class:"dropdown-item" %>
-            </ul>
+          <li class="nav-link ">
+            <div class="btn-group">
+              <%= link_to "Личный кабинет","/profile",class:"nav-link" %>
+
+              <button type="button" class="btn btn-submit dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Переключатель выпадающего списка</span>
+              </button>
+              <ul class="dropdown-menu w-100">
+                <%= link_to 'Редактировать',edit_user_registration_path , :class => 'dropdown-item' %>
+                <%= button_to 'Выйти', destroy_user_session_path, method: :delete,class:"dropdown-item" %>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
