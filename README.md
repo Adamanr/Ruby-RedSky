@@ -1,24 +1,13 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Ru]
+Веб-сайт выдуманной компании.
+Экосистема Rails
+Гемы: Devise,simple_form
+Кол-во страниц: 7
+Фронтенд: HTML/SCSS/Bootstrap
+<hr>
+[En]
+The website of a fictional company.
+Rails Ecosystem
+Gems: Devise,simple_form
+Number of pages: 7
+Frontend: HTML/CSS/Bootstrap
