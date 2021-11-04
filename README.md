@@ -3,7 +3,7 @@
 Экосистема Rails
 Гемы: Devise,simple_form
 Кол-во страниц: 7
-Фронтенд: HTML/SCSS/Bootstrap
+Фронтенд: HTML/SCSS/Bootstrap<br>
 [En]
 The website of a fictional company.
 Rails Ecosystem
