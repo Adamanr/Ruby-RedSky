@@ -1,11 +1,11 @@
 [Ru]<br>
-Веб-сайт выдуманной компании.<br>
-Экосистема Rails<br>
+Веб-сайт выдуманной компании<br>
+Экосистема: Rails<br>
 Гемы: Devise,simple_form<br>
 Кол-во страниц: 7<br>
-Фронтенд: HTML/SCSS/Bootstrap v5.0.2<br>
+Фронтенд: HTML/SCSS/Bootstrap v5.0.2<br><br>
 [En]<br>
-The website of a fictional company.<br>
+The website of a fictional company<br>
 Rails Ecosystem<br>
 Gems: Devise,simple_form<br>
 Number of pages: 7<br>
