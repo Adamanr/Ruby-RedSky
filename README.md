@@ -4,7 +4,7 @@
 Гемы: Devise,simple_form
 Кол-во страниц: 7
 Фронтенд: HTML/SCSS/Bootstrap
-<hr>
+<hr><br>
 [En]
 The website of a fictional company.
 Rails Ecosystem
